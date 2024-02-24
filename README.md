@@ -5,3 +5,5 @@ Features
 Displays photos in a responsive grid layout.
 Clicking on a photo opens a modal window with a larger view of the image.
 Responsive design that adapts to different screen sizes (desktop, tablet, mobile).
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
