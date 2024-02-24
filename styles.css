@@ -1,0 +1,84 @@
+body {
+    font-family: ‘Allan’;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    background-image: url("./1268183.webp");
+    background-repeat: repeat;
+    background-size: 100px;
+}
+
+header {
+    background: linear-gradient(90deg, #00ffff, blue);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid;
+    border-color:white;
+    display:flex;
+
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.mySlides img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
