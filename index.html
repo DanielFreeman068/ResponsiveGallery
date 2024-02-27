@@ -4,38 +4,35 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Responsive Photo Gallery</title>
-<link rel="stylesheet" href="styles.css">
-<link href=’https://fonts.googleapis.com/css?family=Allan’ rel=’stylesheet’>
+<link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 <header>
-<h1>Lionel Messi</h1>
+<h1>Photo Gallery</h1>
 </header>
 <main>
 <div class="gallery">
-<div class="photo" onclick="openModal();currentSlide(1)"><img src="messi1.jpg" alt="Photo 1"></div>
-<div class="photo" onclick="openModal();currentSlide(2)"><img src="messi2.jpg" alt="Photo 2"></div>
-<div class="photo" onclick="openModal();currentSlide(3)"><img src="messi3.jpg" alt="Photo 3"></div>
-<div class="photo" onclick="openModal();currentSlide(4)"><img src="messi4.jpg" alt="Photo 4"></div>
-<div class="photo" onclick="openModal();currentSlide(1)"><img src="messi5.png" alt="Photo 1"></div>
-<div class="photo" onclick="openModal();currentSlide(2)"><img src="messi6.jpg" alt="Photo 2"></div>
-<div class="photo" onclick="openModal();currentSlide(3)"><img src="messi7.jpg" alt="Photo 3"></div>
-<div class="photo" onclick="openModal();currentSlide(4)"><img src="messi8.jpg" alt="Photo 4"></div>
+    <!-- this displays the photos and uses onclick to link with the js -->
+    <div class="photo" onclick="openModal();currentSlide(1)"><img src="./messi5.png" alt="Photo 1"></div>
+    <div class="photo" onclick="openModal();currentSlide(2)"><img src="./messi2.jpg" alt="Photo 2"></div>
+    <div class="photo" onclick="openModal();currentSlide(3)"><img src="./messi3.jpg" alt="Photo 3"></div>
+    <div class="photo" onclick="openModal();currentSlide(4)"><img src="./messi4.jpg" alt="Photo 4"></div>
 </div>
 <div id="myModal" class="modal">
+    <!-- this is the X button to exit from the slideshow -->
 <span class="close cursor" onclick="closeModal()">&times;</span>
 <div class="modal-content">
-<div class="mySlides"><img src="messi1.jpg" alt="Photo 1"></div>
-<div class="mySlides"><img src="messi2.jpg" alt="Photo 2"></div>
-<div class="mySlides"><img src="messi3.jpg" alt="Photo 3"></div>
-<div class="mySlides"><img src="messi4.jpg" alt="Photo 4"></div>
-<div class="mySlides"><img src="messi5.png" alt="Photo 1"></div>
-<div class="mySlides"><img src="messi6.jpg" alt="Photo 2"></div>
-<div class="mySlides"><img src="messi7.jpg" alt="Photo 3"></div>
-<div class="mySlides"><img src="messi8.jpg" alt="Photo 4"></div>
+    <!-- these are the arrows and tell the js function whether it should minus or add from the index -->
+<span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+<span class="next" onclick="plusSlides(1)">&#10095;</span>
+<!-- this is the slideshow -->
+<div class="mySlides"><img src="./messi5.png" alt="Photo 1"></div>
+<div class="mySlides"><img src="./messi2.jpg" alt="Photo 2"></div>
+<div class="mySlides"><img src="./messi3.jpg" alt="Photo 3"></div>
+<div class="mySlides"><img src="./messi4.jpg" alt="Photo 4"></div>
 </div>
 </div>
 </main>
-<script src="index.js"></script>
+<script src="./index.js"></script>
 </body>
 </html>
